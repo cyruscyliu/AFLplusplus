@@ -429,7 +429,7 @@ int main(int argc, char *argv[]) {
   DEBUGF("Hello! We are in aflpp-net!\n");
 
   int opt;
-  while ((opt = getopt(argc, argv, "N:D:W:w:Kc:")) > 0) {
+  while ((opt = getopt(argc, argv, "N:D:d:W:w:c:")) > 0) {
     switch (opt) {
       case 'N': /* network configuration */
         if (use_net) { FATAL("Multiple -N options not supported"); }
